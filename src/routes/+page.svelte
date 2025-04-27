@@ -1,6 +1,6 @@
 <script lang="ts">
     function playSound(filename: string) {
-        const audio = new Audio(`/sounds/${filename}.mp3`);
+        const audio = new Audio('sounds/' + filename + '.mp3');
         audio.play();
     }
 </script>
