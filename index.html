@@ -6,6 +6,8 @@
   <title>Vibeboard 😎</title>
   <link rel="icon" href="icon-512.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ef4444">
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gray-200">
   <div class="w-full max-w-xs bg-white rounded-2xl shadow-2xl p-6">
@@ -39,6 +41,11 @@
     function playSound(filename) {
       const audio = new Audio('sounds/' + filename + '.mp3');
       audio.play();
+    }
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
     }
   </script>
 </body>
