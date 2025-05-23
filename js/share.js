@@ -75,6 +75,12 @@ class AudioShareManager {
       return true;
       
     } catch (error) {
+      // Check if this is a user cancellation (not a real error)
+      if (error.name === 'AbortError' || error.message.includes('cancel') || error.message.includes('abort')) {
+        console.log('User cancelled share dialog');
+        return true; // Return true to prevent fallback popup
+      }
+      
       console.log('Native share failed:', error);
       return false;
     }
