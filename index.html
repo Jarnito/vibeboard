@@ -13,61 +13,134 @@
   <div class="flex flex-col gap-6 w-full max-w-sm">
     <div class="w-full bg-white rounded-2xl shadow-2xl p-6">
       <h1 class="text-3xl font-extrabold text-center mb-8">Plopboard 😎</h1>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('gehaald')">gehaald</button>
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('plopperdeplop')">Plopperde</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('gehaald')">gehaald</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('gehaald', 'sounds')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('plopperdeplop')">Plopperde</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('plopperdeplop', 'sounds')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('hallowki')">hallowki</button>
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('toenplots')">toenplots</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('hallowki')">hallowki</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('hallowki', 'sounds')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('toenplots')">toenplots</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('toenplots', 'sounds')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('luiheeftaids')">luiheeftaids</button>
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('ikrookeenpijp')">rookeenpijp</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('luiheeftaids')">luiheeftaids</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('luiheeftaids', 'sounds')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('ikrookeenpijp')">rookeenpijp</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('ikrookeenpijp', 'sounds')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('eruit')">eruit</button>
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('behalvelui')">behalvelui</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('eruit')">eruit</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('eruit', 'sounds')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('behalvelui')">behalvelui</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('behalvelui', 'sounds')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('dommerik')">dommerik</button>
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('seksmetsmal')">sekssmal</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('dommerik')">dommerik</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('dommerik', 'sounds')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('seksmetsmal')">sekssmal</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('seksmetsmal', 'sounds')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('klus!')">klus!</button>
-        <button class="bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('geenaids')">geenaids</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('klus!')">klus!</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('klus!', 'sounds')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-red-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-red-600 active:bg-red-700" onclick="playSound('geenaids')">geenaids</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('geenaids', 'sounds')" title="Share">📤</button>
+        </div>
       </div>
     </div>
 
     <div class="w-full bg-white rounded-2xl shadow-2xl p-6">
       <h2 class="text-3xl font-extrabold text-center mb-8">SamsonvsGert 😎</h1>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('help!')">Help!</button>
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('jarigben')">Jarig ben!</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('help!')">Help!</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('help!', 'soundz')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('jarigben')">Jarig ben!</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('jarigben', 'soundz')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('flikkerop')">Flikker op!</button>
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('samson!')">Samson!</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('flikkerop')">Flikker op!</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('flikkerop', 'soundz')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('samson!')">Samson!</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('samson!', 'soundz')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('kutkapper')">Kut kapper</button>
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('grotelama')">Grote lama</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('kutkapper')">Kut kapper</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('kutkapper', 'soundz')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('grotelama')">Grote lama</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('grotelama', 'soundz')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('robot')">Robot</button>
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('eenramp')">Een ramp!</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('robot')">Robot</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('robot', 'soundz')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('eenramp')">Een ramp!</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('eenramp', 'soundz')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('ahjanatuurlijk')">Ah ja natuurlijk</button>
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('samsongertje')">Samson Gertje</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('ahjanatuurlijk')">Ah ja natuurlijk</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('ahjanatuurlijk', 'soundz')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('samsongertje')">Samson Gertje</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('samsongertje', 'soundz')" title="Share">📤</button>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4 mb-3">
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('naardekelder')">Naar de kelder</button>
-        <button class="bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('gertje')">Gertje</button>
+      <div class="grid grid-cols-1 gap-3 mb-3">
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-blue-600 active:bg-blue-700" onclick="playSoundz('naardekelder')">Naar de kelder</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('naardekelder', 'soundz')" title="Share">📤</button>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 bg-blue-500 text-white text-lg font-semibold rounded-xl shadow-lg p-5 transition active:scale-95 hover:bg-gray-700" onclick="playSoundz('gertje')">Gertje</button>
+          <button class="bg-gray-600 text-white rounded-xl p-2 transition active:scale-95 hover:bg-gray-700" onclick="audioShareManager.shareSound('gertje', 'soundz')" title="Share">📤</button>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Audio playback functions -->
   <script>
     function playSound(filename) {
       const audio = new Audio('sounds/' + filename + '.mp3');
@@ -79,6 +152,11 @@
       audio.play();
     }
   </script>
+
+  <!-- Import modular sharing functionality -->
+  <script src="js/share.js"></script>
+
+  <!-- Service worker registration -->
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js');
